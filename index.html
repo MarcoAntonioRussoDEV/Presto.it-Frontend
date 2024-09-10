@@ -1,0 +1,139 @@
+<!--
+Ciao Marco,
+devo dire che è sempre un piacere vedere il tuo codice.
+Veramente complimenti, si vede che JS fa parte di te e la sensazione che ho avuto legendo il codice JS che tu
+ti diverti tantissimo!
+Ho visto con piacere che hai costruito lo slider, vermaente ben fatto
+
+-->
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presto.it</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="./resources/css/style.css">
+
+</head>
+<body>
+    
+
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg custom-bg-green position-fixed w-100 top-0 start-0 z-2">
+            <div class="container-fluid p-0">
+                <a class="navbar-brand custom-text-white custom-padding-0-sm ms-2" href="#"><img id="brand-img" src="./resources/img/logo-orizontal-metallic.png" alt="Brand"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                    <span class="fa-solid fa-bars"></span>
+                </button>
+                <div  class="collapse navbar-collapse justify-content-end custom-bg-green p-2 px-3 w-25" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav mb-2 mb-lg-0 gap-md-5">
+                        <li class="nav-item text-center">
+                            <a class="nav-link active-page custom-text-white" href="#">Home</a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link custom-text-white" href="./resources/views/annunci.html">Annunci</a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link custom-text-white" href="#">About us</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+
+
+        <!-- End Navbar -->
+        <!-- Hero Section -->
+        <div class="brand-over"><img class="container-fluid  " src="./resources/img/logo-full-metallic.png" alt=""></div class="brand-over">
+        <div id="container-hero-section">
+            <div id="hero-section" class="container-hero">
+                <div class="image-container ">
+                    <img src="./resources/img/villa-hero-section-before.png" alt="color-img" class="image-before slider-image">
+                    <img src="./resources/img/villa-hero-section-after.png" alt="bw-img" class="image-after slider-image">
+                </div>
+                <div>
+                    <input class="slider" type="range" min="0" max="100" name="" id="">
+                    <div class="slider-line"></div>
+                    <div class="slider-button"><i class="fa-solid fa-arrows-left-right-to-line"></i></div>
+                </div>
+            </div>
+        </div>
+        <!-- End Hero Section -->
+    </header>
+    
+    <main class="px-2">
+        <!-- Card -->
+        <h2 class="mt-5 text-center">Recent articles:</h2>
+        <article id="card-section" class="d-flex  justify-content-center gap-xl-1">
+            <div class="cards col-4  d-flex align-items-end justify-content-between flex-xl-row col-xl-3 justify-content-xl-start align-items-xl-end">
+                <img class="rounded rounded-3 cards-img" src="https://www.viviverona.com/wp-content/uploads/2018/11/2672-ville-di-lusso.jpg" alt="">
+                <div class="card-text d-flex flex-column justify-content-end ">
+                    <h3 class="card-title">Villa 1</h3>
+                    <p class="card-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veniam beatae id sequi vel veritatis ad eveniet eum deserunt maiores harum delectus quo cum minima deleniti repellendus, cupiditate adipisci neque.
+                    </p>
+                </div>
+            </div>
+            <div class="cards col-4  d-flex align-items-end justify-content-between flex-xl-row col-xl-3 justify-content-xl-start align-items-xl-end">
+                <img class="rounded rounded-3 cards-img" src="https://magazine.livingdmore.com/wp-content/uploads/2021/08/caratteristiche-casa-lusso.jpg" alt="">
+                <div class="card-text d-flex flex-column justify-content-end ">
+                    <h3 class="card-title">Villa 2</h3>
+                    <p class="card-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veniam beatae id sequi vel veritatis ad eveniet eum deserunt maiores harum delectus quo cum minima deleniti repellendus, cupiditate adipisci neque.
+                    </p>
+                </div>
+            </div>
+            <div class="cards col-4  d-flex align-items-end justify-content-between flex-xl-row col-xl-3 justify-content-xl-start align-items-xl-end">
+                <img class="rounded rounded-3 cards-img" src="https://www.designmag.it/wp-content/uploads/case-da-sogno.jpg" alt="">
+                <div class="card-text d-flex flex-column justify-content-end ">
+                    <h3 class="card-title">Villa 3</h3>
+                    <p class="card-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veniam beatae id sequi vel veritatis ad eveniet eum deserunt maiores harum delectus quo cum minima deleniti repellendus, cupiditate adipisci neque.
+                    </p>
+                </div>
+            </div>
+        </article>
+        <!-- End Card -->
+        <!-- Numeri -->
+        <article id="numbers-article" class="z-3 numbers-article container-fluid d-flex justify-content-center flex-column px-xl-5 mt-5  align-items-xl-start justify-content-xl-center flex-xl-row px-2">
+            <h2 class="h1">OUR NUMBERS:</h2>
+            <div class="container d-xl-flex gap-xl-5 justify-content-xl-between px-0">
+                <section class="d-flex justify-content-between align-items-baseline gap-xl-5">
+                    <p class="d-flex numbers "><span class="child-1">1</span><span class="child-2">0</span><span class="child-3">0</span></p>
+                    <p class="text-numbers ">online products</p>
+                </section>
+                <section class="d-flex justify-content-between align-items-baseline gap-xl-5">
+                    <p class="d-flex numbers"><span class="child-1">5</span><span class="child-2">0</span><span class="child-3">0</span></p>
+                    <p class="text-numbers">satisfied customers</p>
+                </section>
+                <section class="d-flex justify-content-between align-items-baseline gap-xl-5">
+                    <p class="d-flex numbers"><span class="child-1">1.</span><span class="child-2">0</span><span class="child-3">0</span><span class="child-4">0</span></p>
+                    <p class="text-numbers">online products</p>
+                </section>
+            </div>
+        
+        </article>
+        <!-- End Numeri -->
+        
+    </main>
+
+    <footer>
+        
+    </footer>
+
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- custom JS -->
+<script src="./resources/js/main.js"></script>
+
+</body>
+</html>
